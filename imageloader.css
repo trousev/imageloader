@@ -32,3 +32,12 @@
 {
     display: none;
 }
+
+.imageloader-add-image-external
+{
+    text-align: center; 
+    overflow: hidden; 
+    width: 120px; 
+    height: 200px; 
+    border: 1px solid #038f1a; 
+}
