@@ -1,0 +1,25 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="imageloader.js"></script>
+<link rel="stylesheet" href="imageloader.css"></link>
+
+<script>
+    $(document).ready(function() {
+        imageLoader = new ImageLoader("#my_object");
+        imageLoader = new ImageLoader("#my_object2");
+    });
+</script>
+
+</head>
+  <body>
+   <h1>Image Loader</h1>
+   <form method="post">
+     <div id="my_object">
+        <img context="a" src="example.png"></image>
+        <img context="a" src="example1.png"></image>
+     </div>
+   <input type="submit" />
+   </form>
+  </body>
+</html>
