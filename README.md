@@ -15,6 +15,11 @@ Requirements
 
  * JQuery
 
+License
+-------
+
+2-clause BSD
+
 PHP server example
 ------------------
 
