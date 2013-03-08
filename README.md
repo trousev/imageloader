@@ -8,7 +8,7 @@ This is a simple JS script, which allows You to have tasty image upload form (li
 Live demo
 ---------
 
-Aviable here: https://github.com/trousev/imageloader/master/example.html
+Aviable here: http://htmlpreview.github.com/?https://github.com/trousev/imageloader/master/example.html
 
 Requirements
 ------------
