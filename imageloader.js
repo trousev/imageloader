@@ -1,5 +1,6 @@
-    function ImageLoader(selector)
+    function ImageLoader(selector, root_path)
     {
+        var ___path = root_path;
         var ___root_selector = selector;
         var ___fileid = 1;
         var ___exid = 1;
@@ -21,7 +22,7 @@
         }
         var createinputfile = function(id)
         {
-            ans = $('<div class="imageloader-external" id="ext_'+id+'"  style="background: url(add.png) no-repeat center center; cursor: pointer; text-align: left; vertical-align:top; overflow: hidden; width: 120px; height: 200px; border: 1px dotted #031a8f; ">'
+            ans = $('<div class="imageloader-external" id="ext_'+id+'"  style="background: url('+___path+'/add.png) no-repeat center center; cursor: pointer; text-align: left; vertical-align:top; overflow: hidden; width: 120px; height: 200px; border: 1px dotted #031a8f; ">'
              +    '<div style="color: #fff; font-size: 2px; font-weight: bold;"></div>'
              +    '<input id="on_append_image" type="file" name="'+id+'" size="1" style="cursor: pointer; margin-top: -1px; margin-left:-410px; -moz-opacity: 0; filter: alpha(opacity=0); opacity: 0; font-size: 320px; height: 200px;">'
              +'</div>');
