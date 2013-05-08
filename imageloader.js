@@ -37,7 +37,8 @@
           exfid = 'ex_'+exid();
           createimage(exfid);
           imageremovehandler(exfid);
-          $(this).attr('height', 200);
+          $(this).attr('src', $(this).attr("link"));
+          $(this).attr('width', "200px");
           $(this).attr("class","imageloader-image");
           $(___root_selector+" #im_"+exfid+ " #image").append($(this));
         });
@@ -93,7 +94,7 @@
                 var file = me[0].files[0];
                 var reader = new FileReader();
                 reader.onload = function(e) {
-                    $('<img>', {height: 200, class: "imageloader-image"}).attr('src', e.target.result).appendTo(___root_selector+' #im_'+oldfid + " #image");
+                    $('<img>', {"width": "200px", class: "imageloader-image"}).attr('src', e.target.result).appendTo(___root_selector+' #im_'+oldfid + " #image");
                 };
                 reader.readAsDataURL(file);
                 

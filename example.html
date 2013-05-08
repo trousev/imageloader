@@ -3,11 +3,9 @@
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="imageloader.js"></script>
 <link rel="stylesheet" href="imageloader.css"></link>
-
 <script>
     $(document).ready(function() {
-        imageLoader = new ImageLoader("#my_object");
-        imageLoader = new ImageLoader("#my_object2");
+        imageLoader = new ImageLoader("#my_object",".");
     });
 
 
@@ -15,13 +13,13 @@
 
 </head>
   <body>
-   <h1>Image Loader</h1>
+   <h1>IImage Loader</h1>
 
    <hr>
    <form method="post">
      <div id="my_object">
-        <img context="a" src="example.png"></image>
-        <img context="a" src="example1.png"></image>
+        <img context="a" link="example.png"></img>
+        <img context="a" link="example1.png"></img>
      </div>
    <input type="submit" />
    </form>
